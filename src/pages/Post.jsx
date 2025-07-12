@@ -3,7 +3,7 @@ import parse from 'html-react-parser'
 import {Link, useNavigate, useParams} from 'react-router-dom'
 import appwriteService from '../appwrite/config'
 import Button from  '../components/Button'
-import Container from  '../components/Container'
+import Container from  '../components/container/Container'
 import { useSelector } from 'react-redux'
 
 

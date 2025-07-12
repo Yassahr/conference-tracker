@@ -22,9 +22,9 @@ const Input = React.forwardRef(
                      bg-white texr-black outline-none
                     focus:bg-gray-50 duration-200 border 
                     border-gray-2-- w-full ${className}`}
-                    type = {types}
+                    type = {type}
                     ref={ref}
-                    props={...props}
+                    {...props}
                     id={id}
                 />
             </div>

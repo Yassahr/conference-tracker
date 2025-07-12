@@ -1,11 +1,13 @@
 import React from 'react';
+//using alias so Login function and login in comp can be differiatated
+import  SignupComponent from '../components/SignUp'
 
-const SignUp = () => {
+const Signup = () => {
     return (
-        <div>
-            SignUp
+        <div className="py-8">
+            <SignupComponent /> 
         </div>
     );
 };
 
-export default SignUp;
+export default Signup;
