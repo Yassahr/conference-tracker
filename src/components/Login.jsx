@@ -43,13 +43,16 @@ function Login() {
             <h2 className="text-center text-2xl font-bold leading-tight">
                 Login
             </h2>
-            <p className="mt-2 text-center text-base text-black/60">
-                Don&apos;t have an account?&nbsp;
+        
                 <Link
                 to="/signup"
                 className="font-meduim text-primary transition-all duration-200 hover:underline"
-                />
-            </p>
+                >
+                    <p className="mt-2 text-center text-base text-black/60">
+                      Don&apos;t have an account?&nbsp;
+                    </p>
+                </Link>
+            
             {error &&
              <p className="text-red-600 mt-8 text-center">
                 {error}

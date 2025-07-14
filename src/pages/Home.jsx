@@ -3,6 +3,7 @@ import appwriteService from '../appwrite/config'
 import Container from  '../components/container/Container'
 import PostCard from '../components/PostCard'
 
+
 const Home = () => {
     const [posts, setPosts ] = useState(null)
 
@@ -13,9 +14,10 @@ const Home = () => {
             }
         })
     }, [])
-    console.log("post",posts)
-     if(posts.length==0){
-        return (
+    console.log("post",posts, posts!=null )
+     if(posts==null ){
+      //need to add conditional if posts.length==0  
+            return (
             <div className="w-full py-8">
                 <Container>
                     <div className="flex flex-wrap">
@@ -24,7 +26,7 @@ const Home = () => {
                 </Container>
     
             </div>
-    )
+         )
 
      }
         return (
